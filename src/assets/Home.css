@@ -1,0 +1,69 @@
+/* Dark background */
+.home {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slideDown 1s ease;
+}
+
+.subtitle {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* subtle hover effect */
+.title:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}

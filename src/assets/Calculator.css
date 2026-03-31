@@ -1,7 +1,13 @@
+.body {
+  height: 400px;
+  background: linear-gradient(135deg, #111c42, #666ebadc);
+}
+
 .calculator {
-  width: 260px;
+  width: 300px;
   margin: 60px auto;
   padding: 10px;
+  margin-top: 20px;
   border-radius: 10px;
   background: #222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -41,6 +47,7 @@ button:hover {
 .zero {
   grid-column: span 2;
 }
-.right{
-    background-color: orange;
+
+.right {
+  background-color: rgba(0, 123, 255, 0.889);
 }
