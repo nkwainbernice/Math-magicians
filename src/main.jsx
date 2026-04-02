@@ -6,6 +6,7 @@ import Navbar from './component/Navbar';
 import Home from './component/Home';
 import Calculator from './component/Calculator';
 import Quote from './component/quote';
+import './assets/index.css';
 
 ReactDom.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

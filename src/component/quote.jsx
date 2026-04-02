@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/Quote.css';
+
+import ApiKey from '../env.js';
 
 const Quote = () => {
   const [quote, setQuote] = useState('Loading...');
@@ -9,7 +10,7 @@ const Quote = () => {
       const response = await fetch('https://api.api-ninjas.com/v1/quotes', {
         method: 'GET',
         headers: {
-          'X-Api-Key': 'DHCq65OoWXOdqnErgC6sF8ba9p7P4jiV04kv1JhN',
+          'X-Api-Key': ApiKey,
         },
       });
 
@@ -22,7 +23,13 @@ const Quote = () => {
   };
 
   useEffect(() => {
-    fetchQuote();
+    fetchQuote(); 
+
+    const quoteInterval = setInterval(() => {
+      fetchQuote(); 
+    }, 10000); // 
+
+    return () => clearInterval(quoteInterval); 
   }, []);
 
   return (

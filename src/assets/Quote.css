@@ -36,7 +36,7 @@
   padding: 12px 25px;
   border: none;
   border-radius: 10px;
-  background: #1a73e8;
+  background: #401ae8d3;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -45,7 +45,7 @@
 }
 
 .quote button:hover {
-  background: #0f5bd3;
+  background: #400fd3e8;
   transform: translateY(-2px);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }

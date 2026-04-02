@@ -1,4 +1,4 @@
-import '../assets/Home.css';
+
 
 const Home = () => (
   <>

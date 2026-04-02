@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/Navbar.css';
+
 
 const Navbar = () => (
   <>
     <nav className="nav">
-      <h2 className="logo">MATH MAGICIANS</h2>
+      <h2 className="logo">CalcSite</h2>
 
       <ul className="nav-links">
         <li>
