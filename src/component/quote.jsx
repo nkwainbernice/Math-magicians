@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import ApiKey from '../env.js';
+const ApiKey = import.meta.env.VITE_API_KEY || '';
 
 const Quote = () => {
   const [quote, setQuote] = useState('Loading...');
