@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/Quote.css';
+
 import ApiKey from '../env.js';
 
 const Quote = () => {
@@ -23,7 +23,13 @@ const Quote = () => {
   };
 
   useEffect(() => {
-    fetchQuote();
+    fetchQuote(); 
+
+    const quoteInterval = setInterval(() => {
+      fetchQuote(); 
+    }, 10000); // 
+
+    return () => clearInterval(quoteInterval); 
   }, []);
 
   return (
