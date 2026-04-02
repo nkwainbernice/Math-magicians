@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 *env.js
-*
+!src/
+!src/assets/
+!src/assets/index.css
 render.md
